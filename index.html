@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evo | Pauta, WhatsApp, agenda y medición para pymes en Perú</title>
+<meta name="description" content="Evo hace el trabajo diario que una agencia le cobra a una pyme peruana: pauta en Meta, Google y TikTok, atención por WhatsApp, agenda y medición, con tope de gasto y tu aprobación en cada cambio.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Evo | Sabe qué campañas producen resultados.">
+<meta property="og:description" content="Pauta, WhatsApp, agenda y medición para pymes en Perú, con tope de gasto y tu aprobación en cada cambio.">
+<meta property="og:locale" content="es_PE">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23fff'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23ff5a49'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root{--ink:#273a5e;--muted:#5f6f8d;--line:#e2e7f0;--red:#ff5a49;--red-h:#ed4938;--cyan:#00b7dc;--green:#20c997;--t-blue:#eff9ff;--t-green:#e3fff7;--t-violet:#f1efff;--maxw:1140px;--sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,SFMono-Regular,Menlo,monospace;--shadow:0 12px 34px rgba(43,62,93,.1);--r:6px;--ease:cubic-bezier(.2,.75,.25,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em;margin:0 0 .5em}
+h1{font-size:clamp(2.1rem,6vw,3.6rem);font-weight:700}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0 0 1em}
+.wrap{width:min(var(--maxw),calc(100vw - 40px));margin-inline:auto}
+.eyebrow{display:block;color:var(--muted);font:500 .72rem/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.9rem}.eyebrow::before{content:'// ';color:var(--red)}
+:where(a,button,summary):focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.25rem;border-radius:var(--r);font-weight:600;text-decoration:none;font-size:.98rem;transition:background .2s,color .2s,transform .2s var(--ease);border:1.5px solid transparent}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-h)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}.btn-ghost:hover{border-color:var(--ink)}
+.btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:var(--t-blue)}
+.btn-sm{padding:.55rem .95rem;font-size:.9rem}
+.text-link{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:2px solid var(--red)}
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+.wordmark{display:inline-flex;align-items:center;gap:.4rem;font-weight:700;font-size:1.35rem;letter-spacing:-.05em;text-decoration:none}.wordmark i{width:.7em;height:.7em;border-radius:50%;background:var(--red)}
+.nav-links{display:none;gap:1.6rem;margin:0;padding:0;list-style:none}.nav-links a{text-decoration:none;font-size:.95rem;font-weight:500;color:var(--muted)}.nav-links a:hover{color:var(--ink)}
+.nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border:1.5px solid var(--line);border-radius:var(--r);background:#fff;color:var(--ink);cursor:pointer}
+.nav-right{display:flex;align-items:center;gap:.6rem}
+.nav-menu{display:none;border-top:1px solid var(--line);background:#fff}.nav-menu.open{display:block}.nav-menu ul{list-style:none;margin:0;padding:.6rem 0}.nav-menu a{display:block;padding:.7rem 0;text-decoration:none;font-weight:500}
+@media(min-width:860px){.nav-links{display:flex}.nav-toggle,.nav-menu{display:none!important}}
+/* hero */
+.hero{padding:3.2rem 0 3rem;background:linear-gradient(180deg,var(--t-blue),#fff 70%)}
+.hero-grid{display:grid;gap:2.4rem}
+.hero .lead{font-size:1.15rem;color:var(--muted);max-width:34rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.6rem 0 1rem}
+.hero-rail{display:flex;flex-wrap:wrap;gap:.5rem 1.6rem;margin-top:2.4rem;padding-top:1.2rem;border-top:1px solid var(--line);font:500 .72rem/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media(min-width:900px){.hero{padding:5rem 0 4rem}.hero-grid{grid-template-columns:1.1fr .9fr;align-items:center}}
+/* evidence sheet */
+.sheet{background:#213050;color:#e8eef8;border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow);font-family:var(--mono);font-size:.86rem;line-height:1.5}
+.sheet-top{display:flex;justify-content:space-between;color:#9fb0cc;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.sheet-rule{height:1px;background:rgba(255,255,255,.14);margin:.9rem 0}
+.sheet dl{margin:0;display:grid;gap:.55rem}.sheet dl div{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}.sheet dt{color:#9fb0cc}.sheet dd{margin:0;font-weight:500;text-align:right}
+.sheet .num{color:#fff;font-size:1rem}.sheet .warn{color:#ffb4ad}.sheet .ok{color:#7be9c8}
+.sheet-note{margin:.9rem 0 0;font-size:.74rem;color:#9fb0cc}
+.sheet-foot{display:flex;justify-content:space-between;margin-top:1rem;font-size:.7rem;color:#9fb0cc;letter-spacing:.06em}
+/* statement */
+.statement{padding:3.5rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.statement h2{max-width:26ch}
+.hooks{list-style:none;margin:1.6rem 0 0;padding:0;display:grid;gap:.8rem}
+.hooks li{padding:1rem 1.1rem;border-radius:var(--r);background:var(--t-violet);font-weight:600}
+.hooks li::before{content:'?';display:inline-grid;place-items:center;width:1.5rem;height:1.5rem;margin-right:.6rem;border-radius:50%;background:var(--red);color:#fff;font:500 .8rem var(--mono)}
+@media(min-width:860px){.hooks{grid-template-columns:repeat(3,1fr)}}
+/* sections */
+section{padding:3.5rem 0}@media(min-width:900px){section{padding:5rem 0}}
+.intro{max-width:44rem;margin-bottom:2rem}.intro p{color:var(--muted);font-size:1.05rem}
+/* verticals */
+.vgrid{display:grid;gap:1.1rem}
+@media(min-width:700px){.vgrid{grid-template-columns:repeat(2,1fr)}}@media(min-width:1000px){.vgrid{grid-template-columns:repeat(3,1fr)}}
+.vcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;background:#fff;transition:box-shadow .3s var(--ease),transform .3s var(--ease)}
+.vcard:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.tag{display:inline-block;align-self:flex-start;font:500 .66rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:.35rem .55rem;border-radius:4px;margin-bottom:.9rem}
+.tag-focus{background:var(--t-green);color:#0f7a5a}.tag-horeca{background:var(--t-blue);color:#0a7a92}
+.vcard h3{font-size:1.25rem}
+.vcard .pain{color:var(--muted);font-size:.95rem}
+.vcard ul{margin:0 0 1rem;padding-left:1.1rem;font-size:.95rem}.vcard li{margin:.25rem 0}
+.vcard .lim{margin-top:auto;font-size:.85rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:.8rem}
+.badge{display:flex;gap:.5rem;align-items:flex-start;background:var(--t-violet);border-radius:4px;padding:.6rem .7rem;font-size:.82rem;line-height:1.4;margin-bottom:.9rem}.badge svg{flex:none;width:16px;height:16px;margin-top:2px}
+.other{margin-top:1.8rem;padding:1.1rem 1.2rem;border-radius:var(--r);background:var(--t-blue);font-size:.95rem}
+/* method */
+.method{background:var(--t-blue)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.steps li{background:#fff;border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow)}
+.steps li span{display:block;font:500 .8rem var(--mono);color:var(--red);margin-bottom:.6rem}
+.steps p{margin:0;color:var(--muted);font-size:.97rem}
+@media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}}
+/* honesty */
+.hgrid{display:grid;gap:2rem}@media(min-width:900px){.hgrid{grid-template-columns:.8fr 1.2fr}}
+.hlist{display:grid;gap:1rem}.hlist p{margin:0;padding:1rem 1.1rem;border-left:3px solid var(--green);background:var(--t-green);border-radius:0 var(--r) var(--r) 0}.hlist strong{display:block;margin-bottom:.2rem}.hlist span{color:var(--muted);font-size:.95rem}
+/* pricing */
+.pricing{background:var(--t-violet)}
+.plans{display:grid;gap:1.1rem}@media(min-width:860px){.plans{grid-template-columns:repeat(3,1fr)}}
+.plan{background:#fff;border-radius:var(--r);padding:1.5rem;box-shadow:var(--shadow);display:flex;flex-direction:column;border:1.5px solid transparent}
+.plan.featured{border-color:var(--red)}
+.plan h3{font-size:1.2rem}
+.price{font-size:2rem;font-weight:700;letter-spacing:-.03em;margin:.3rem 0 0}.price small{font-size:.9rem;font-weight:500;color:var(--muted);letter-spacing:0}
+.igv{font:400 .8rem var(--mono);color:var(--muted);margin:.2rem 0 1rem}
+.plan ul{list-style:none;margin:0 0 1.3rem;padding:0;font-size:.95rem}.plan li{padding:.4rem 0;border-top:1px solid var(--line)}.plan li::before{content:'—';color:var(--red);margin-right:.5rem}
+.plan .btn{margin-top:auto;justify-content:center}
+.terms{margin-top:1.4rem;display:grid;gap:.6rem;font-size:.9rem;color:var(--muted)}
+.pack{margin-top:1.4rem;background:#fff;border-radius:var(--r);padding:1.1rem 1.3rem;display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;align-items:center;justify-content:space-between;box-shadow:var(--shadow)}.pack strong{font-size:1.05rem}.pack span{color:var(--muted);font-size:.9rem}
+/* faq */
+.fgrid{display:grid;gap:2rem}@media(min-width:900px){.fgrid{grid-template-columns:.7fr 1.3fr}}
+details{border-top:1px solid var(--line)}details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;padding:1rem 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem;align-items:center}summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--red);font:500 1.2rem var(--mono);flex:none}details[open] summary::after{content:'–'}
+details p{margin:0 0 1rem;color:var(--muted);font-size:.97rem}
+/* closing */
+.closing{background:var(--ink);color:#fff;text-align:center}.closing .eyebrow{color:#b8c4dc}.closing p{color:#c9d3e6;max-width:36rem;margin:0 auto 1.6rem}
+footer{padding:2rem 0;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.8rem 1.6rem;align-items:center;justify-content:space-between}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:1.2rem}footer a{text-decoration:none}footer a:hover{color:var(--ink)}
+/* reveal */
+.reveal{transition:opacity .6s var(--ease),transform .6s var(--ease)}html.js .reveal{opacity:0;transform:translateY(18px)}html.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}html.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" style="position:absolute;left:-999px" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Ir al contenido</a>
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="wordmark" href="#"><i aria-hidden="true"></i>evo</a>
+    <ul class="nav-links">
+      <li><a href="#verticales">Verticales</a></li>
+      <li><a href="#metodo">Cómo funciona</a></li>
+      <li><a href="#precios">Precios</a></li>
+      <li><a href="#preguntas">Preguntas</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-red btn-sm" href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo">Solicitar acceso</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button>
+    </div>
+  </div>
+  <div class="nav-menu" id="nav-menu"><div class="wrap"><ul>
+    <li><a href="#verticales">Verticales</a></li>
+    <li><a href="#metodo">Cómo funciona</a></li>
+    <li><a href="#precios">Precios</a></li>
+    <li><a href="#preguntas">Preguntas</a></li>
+  </ul></div></div>
+</nav>
+
+<main id="main">
+<header class="hero"><div class="wrap">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Operación diaria para pymes en Perú</span>
+      <h1>Sabe qué campañas producen resultados.</h1>
+      <p class="lead">Evo hace el trabajo diario que una agencia le cobra a una pyme peruana: pauta, WhatsApp, agenda y medición, con tope de gasto y tu aprobación en cada cambio.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo">Solicitar acceso <span aria-hidden="true">&#8594;</span></a>
+        <a class="btn btn-ghost" href="#precios">Ver precios</a>
+      </div>
+      <a class="text-link" href="#metodo">Ve cómo funciona</a>
+    </div>
+    <aside class="sheet reveal" aria-label="Hoja de evidencia: cuenta Meta propia del fundador">
+      <div class="sheet-top"><span>Hoja de evidencia</span><span>Meta Ads · 2023–2026</span></div>
+      <div class="sheet-rule"></div>
+      <dl>
+        <div><dt>Cuenta</dt><dd>Propia del fundador, no cliente</dd></div>
+        <div><dt>Meses operados</dt><dd class="num">37</dd></div>
+        <div><dt>Pauta total</dt><dd class="num">S/10,594</dd></div>
+        <div><dt>Conversaciones de WhatsApp</dt><dd class="num">4,098</dd></div>
+        <div><dt>Costo por conversación</dt><dd><span class="warn">S/2.23</span> → <span class="ok">S/1.54</span></dd></div>
+        <div><dt>Campañas de tráfico</dt><dd><span class="warn">S/234.56 → 0 conversaciones</span></dd></div>
+        <div><dt>Anuncios que nunca convirtieron</dt><dd class="warn">16 de 45</dd></div>
+      </dl>
+      <p class="sheet-note">La baja de S/2.23 a S/1.54 ocurrió tras pausar un anuncio en agosto de 2026. Datos de una sola cuenta; no son una proyección para tu negocio.</p>
+      <div class="sheet-foot"><span>evo / cuenta propia</span><span>ago 2026</span></div>
+    </aside>
+  </div>
+  <div class="hero-rail"><span>Dos recorridos: venta y reserva</span><span>Nada se publica sin ti</span><span>Tope de gasto duro</span><span>No es un chatbot</span></div>
+</div></header>
+
+<section class="statement reveal"><div class="wrap">
+  <span class="eyebrow">Lo que vemos en las cuentas</span>
+  <h2>El creativo casi nunca es el problema. El problema es que nadie opera la cuenta.</h2>
+  <ul class="hooks">
+    <li>¿Cuánto de tu pauta se pierde después del clic?</li>
+    <li>De cada 10 conversaciones de WhatsApp, ¿cuántas terminan en cita?</li>
+    <li>¿Qué anuncio trajo tu última reserva?</li>
+  </ul>
+</div></section>
+
+<section id="verticales" class="reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Verticales</span><h2>Hecho para rubros donde el lead llega por WhatsApp y termina en una cita o una reserva.</h2><p>Evo entiende tu negocio, produce copys y creativos, publica pauta en Meta, Google y TikTok Ads, atiende los leads que llegan, agenda y registra de qué anuncio vino cada conversación. Cada rubro tiene sus reglas y sus límites; aquí los decimos.</p></div>
+  <div class="vgrid">
+
+    <article class="vcard">
+      <span class="tag tag-focus">Foco actual · Lima</span>
+      <h3>Clínicas dentales</h3>
+      <p class="pain">Leads que llegan fuera de horario y nadie responde. Dos o más asesores en un mismo número. Seguimiento que se pierde entre turnos.</p>
+      <ul>
+        <li>Responde y califica por WhatsApp.</li>
+        <li>Agenda la cita en tu calendario.</li>
+        <li>Hace seguimiento hasta que la cita ocurre.</li>
+        <li>Registra de qué anuncio vino cada conversación.</li>
+      </ul>
+      <div class="badge"><svg viewBox="0 0 16 16" fill="none" stroke="#6b4fd8" stroke-width="1.6"><path d="M8 1.5 2.5 4v4c0 3.2 2.3 5.6 5.5 6.5 3.2-.9 5.5-3.3 5.5-6.5V4z"/><path d="m5.5 8 1.8 1.8L10.8 6"/></svg><span>Consentimiento escrito de datos de salud antes del primer mensaje (Ley 29733).</span></div>
+      <p class="lim">Las consultas clínicas se derivan a la clínica. Evo no da consejo médico.</p>
+    </article>
+
+    <article class="vcard">
+      <span class="tag tag-focus">Foco actual · Lima</span>
+      <h3>Clínicas capilares</h3>
+      <p class="pain">Ticket alto y decisión larga: el paciente pregunta, compara y se enfría. Sin seguimiento pautado, la evaluación nunca se agenda.</p>
+      <ul>
+        <li>Responde y califica por WhatsApp.</li>
+        <li>Seguimiento pautado hasta la cita de evaluación.</li>
+        <li>Agenda y confirma la evaluación.</li>
+        <li>Registra de qué anuncio vino cada conversación.</li>
+      </ul>
+      <div class="badge"><svg viewBox="0 0 16 16" fill="none" stroke="#6b4fd8" stroke-width="1.6"><path d="M8 1.5 2.5 4v4c0 3.2 2.3 5.6 5.5 6.5 3.2-.9 5.5-3.3 5.5-6.5V4z"/><path d="m5.5 8 1.8 1.8L10.8 6"/></svg><span>Consentimiento escrito de datos de salud antes del primer mensaje (Ley 29733).</span></div>
+      <p class="lim">Las consultas clínicas se derivan a la clínica. Evo no da consejo médico.</p>
+    </article>
+
+    <article class="vcard">
+      <span class="tag tag-focus">Foco actual · Lima</span>
+      <h3>Clínicas y centros estéticos</h3>
+      <p class="pain">Mucha consulta de precio, poca cita concretada. Y publicidad de salud con reglas que un anuncio mal escrito rompe sin querer.</p>
+      <ul>
+        <li>Responde y califica por WhatsApp.</li>
+        <li>Agenda la valoración y hace seguimiento.</li>
+        <li>Revisa cada pieza antes de publicar y bloquea promesas prohibidas.</li>
+        <li>Registra de qué anuncio vino cada conversación.</li>
+      </ul>
+      <div class="badge"><svg viewBox="0 0 16 16" fill="none" stroke="#6b4fd8" stroke-width="1.6"><path d="M8 1.5 2.5 4v4c0 3.2 2.3 5.6 5.5 6.5 3.2-.9 5.5-3.3 5.5-6.5V4z"/><path d="m5.5 8 1.8 1.8L10.8 6"/></svg><span>Consentimiento escrito de datos de salud antes del primer mensaje (Ley 29733).</span></div>
+      <p class="lim">Las consultas clínicas se derivan al centro. Evo no da consejo médico.</p>
+    </article>
+
+    <article class="vcard">
+      <span class="tag tag-horeca">Reservas HORECA</span>
+      <h3>Restaurantes, cafés y bares</h3>
+      <p class="pain">Reservas por WhatsApp que se anotan a mano, mesas dobles en el mismo turno y campañas de las que nadie sabe cuántas mesas llenaron.</p>
+      <ul>
+        <li>Reserva de mesas con capacidad y turnos, sin solapamientos.</li>
+        <li>Confirmación y recordatorio por WhatsApp.</li>
+        <li>Campañas que llenan mesas y se pueden medir.</li>
+      </ul>
+      <p class="lim">Límite: Evo no es un POS ni un sistema de delivery.</p>
+    </article>
+
+    <article class="vcard">
+      <span class="tag tag-horeca">Reservas HORECA</span>
+      <h3>Hoteles y alojamientos</h3>
+      <p class="pain">Consultas de disponibilidad que se responden tarde y reservas que se toman sin verificar todas las noches de la estancia.</p>
+      <ul>
+        <li>Reserva de habitación por fechas.</li>
+        <li>Ocupación máxima y precio por noche.</li>
+        <li>Disponibilidad verificada en toda la estancia.</li>
+      </ul>
+      <p class="lim">Límite: Evo no es un PMS ni un channel manager.</p>
+    </article>
+
+    <article class="vcard">
+      <span class="tag tag-horeca">Reservas HORECA</span>
+      <h3>Catering y eventos</h3>
+      <p class="pain">Cotizaciones que tardan días, fechas que se comprometen dos veces y clientes que desaparecen sin confirmar.</p>
+      <ul>
+        <li>Cotización por asistente.</li>
+        <li>Control de capacidad por fecha.</li>
+        <li>Confirmación explícita del cliente.</li>
+      </ul>
+      <p class="lim">Límite: tarifa simple, sin anticipos verificados.</p>
+    </article>
+
+  </div>
+  <p class="other">¿Otro rubro? <a href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo%20-%20otro%20rubro">Escríbenos</a>; educación y comercio son las siguientes hipótesis. No trabajamos financiero, inmobiliaria ni automotriz.</p>
+</div></section>
+
+<section id="metodo" class="method reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Cómo funciona</span><h2>Tres pasos, y en cada uno decides tú.</h2></div>
+  <ol class="steps">
+    <li><span>01</span><h3>Conoce tu negocio.</h3><p>Capacidad, ticket promedio, presupuesto y metas. Con eso Evo sabe qué proponer y qué no.</p></li>
+    <li><span>02</span><h3>Conecta tus resultados.</h3><p>Citas, reservas, conversaciones. Sin datos de resultados no se puede medir qué funciona.</p></li>
+    <li><span>03</span><h3>Aprueba cada cambio.</h3><p>Todo anuncio nace pausado; tú lo activas. Lo mismo con presupuestos y pausas.</p></li>
+  </ol>
+</div></section>
+
+<section id="honestidad" class="reveal"><div class="wrap hgrid">
+  <div><span class="eyebrow">Reglas de la casa</span><h2>Evo te dice lo que sabe y lo que no.</h2></div>
+  <div class="hlist">
+    <p><strong>No promete ventas sin datos.</strong><span>Los clics ayudan a entender una campaña, pero no son un resultado. Evo mide contra citas y reservas.</span></p>
+    <p><strong>No gasta sin tu permiso.</strong><span>Tope de gasto duro. Avisos a la mitad, al 80 % y al agotarse el presupuesto.</span></p>
+    <p><strong>Usa IA, y te lo dice.</strong><span>Evo propone y ejecuta con sistemas automatizados, y lo declara conforme a la Ley 31814.</span></p>
+    <p><strong>No pide claves por chat.</strong><span>Los accesos a tus cuentas publicitarias se conectan por los permisos oficiales de cada plataforma, nunca por mensaje.</span></p>
+  </div>
+</div></section>
+
+<section id="precios" class="pricing reveal"><div class="wrap">
+  <div class="intro"><span class="eyebrow">Precios</span><h2>Mensual, sin permanencia.</h2><p>Precios netos más IGV 18 %. Se venden entregables, no tokens. La pauta publicitaria es un costo externo y no está incluida.</p></div>
+  <div class="plans">
+    <article class="plan">
+      <h3>Evo Core</h3>
+      <p class="price">S/3,000 <small>/ mes + IGV</small></p>
+      <p class="igv">con IGV: S/3,540</p>
+      <ul>
+        <li>1 establecimiento</li>
+        <li>3 usuarios</li>
+        <li>Reporte mensual</li>
+        <li>4 creativos al mes</li>
+        <li>Meta, Google y TikTok Ads sin cobro aparte</li>
+      </ul>
+      <a class="btn btn-ghost" href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo%20Core">Solicitar acceso</a>
+    </article>
+    <article class="plan featured">
+      <h3>Evo Pro</h3>
+      <p class="price">S/4,000 <small>/ mes + IGV</small></p>
+      <p class="igv">con IGV: S/4,720</p>
+      <ul>
+        <li>Hasta 3 establecimientos</li>
+        <li>5 usuarios</li>
+        <li>Reporte quincenal</li>
+        <li>10 creativos al mes</li>
+        <li>Análisis competitivo de mercado</li>
+        <li>Meta, Google y TikTok Ads sin cobro aparte</li>
+      </ul>
+      <a class="btn btn-red" href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo%20Pro">Solicitar acceso</a>
+    </article>
+    <article class="plan">
+      <h3>Evo Max</h3>
+      <p class="price">S/5,000 <small>/ mes + IGV</small></p>
+      <p class="igv">con IGV: S/5,900</p>
+      <ul>
+        <li>Hasta 6 establecimientos</li>
+        <li>10 usuarios</li>
+        <li>Reporte semanal</li>
+        <li>Hasta 30 creativos al mes</li>
+        <li>Prioridad de aprobaciones</li>
+        <li>Meta, Google y TikTok Ads sin cobro aparte</li>
+      </ul>
+      <a class="btn btn-ghost" href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo%20Max">Solicitar acceso</a>
+    </article>
+  </div>
+  <div class="pack"><div><strong>Pack adicional: 200 créditos de trabajo IA</strong><br><span>Para meses con más piezas o más conversaciones de lo previsto.</span></div><div><strong>S/250 + IGV</strong> <span>(S/295 con IGV)</span></div></div>
+  <div class="terms">
+    <span>Facturación mensual. Cancelación al cierre del ciclo, sin penalidad.</span>
+    <span>La inversión en pauta se paga directamente a Meta, Google o TikTok; Evo no la intermedia ni la incluye.</span>
+  </div>
+</div></section>
+
+<section id="preguntas" class="reveal"><div class="wrap fgrid">
+  <div><span class="eyebrow">Preguntas</span><h2>Antes de escribirnos.</h2></div>
+  <div>
+    <details open><summary>¿Es un chatbot?</summary><p>No. Un chatbot responde mensajes. Evo opera la pauta, atiende por WhatsApp, agenda y mide qué anuncio produjo cada conversación o cita, con una persona aprobando cada cambio.</p></details>
+    <details><summary>¿Publica sin mi permiso?</summary><p>No. Todo anuncio, copy y creativo nace pausado. Tú lo revisas y lo activas. Ningún presupuesto cambia sin tu aprobación.</p></details>
+    <details><summary>¿Qué pasa si se acaba el presupuesto?</summary><p>Evo trabaja con un tope de gasto duro. Recibes avisos a la mitad, al 80 % y al agotarse el tope. Al llegar al tope, las campañas se pausan y no se reanudan hasta que tú lo decidas.</p></details>
+    <details><summary>¿Manejan datos de salud?</summary><p>Solo con consentimiento escrito, conforme a la Ley 29733. Antes del consentimiento, el mensaje queda en cuarentena: no se responde con el sistema y no se pasa al modelo de IA. Las consultas clínicas se derivan a tu equipo.</p></details>
+    <details><summary>¿Sabrán qué anuncio trajo cada cita?</summary><p>Cuando hay señal, Evo la registra; cuando no la hay, lo dice: sin atribución. En salud, además, Meta restringe los eventos que se pueden enviar por su API de conversiones, así que parte de la medición se hace del lado de WhatsApp y la agenda, no del lado del anuncio.</p></details>
+    <details><summary>¿Incluye la pauta?</summary><p>No. La pauta publicitaria es un costo externo que pagas directamente a cada plataforma. El plan cubre la operación: creativos, publicación, atención, agenda y medición.</p></details>
+    <details><summary>¿Emiten factura?</summary><p>Sí. Factura electrónica peruana. El cobro se hace por Mercado Pago.</p></details>
+  </div>
+</div></section>
+
+<section class="closing reveal"><div class="wrap">
+  <span class="eyebrow">Acceso por solicitud</span>
+  <h2>Decide con datos, no con intuición.</h2>
+  <p>Para dueños de negocio en Perú que quieren saber qué campañas producen citas y reservas, y cuáles solo gastan.</p>
+  <a class="btn btn-light" href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo">Solicitar acceso <span aria-hidden="true">&#8599;</span></a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><a class="wordmark" href="#" style="font-size:1.1rem"><i aria-hidden="true"></i>evo</a> · Hecho en Lima · © 2026 Evo</div>
+  <ul>
+    <li><a href="#">Privacidad</a></li>
+    <li><a href="#">Términos</a></li>
+    <li><a href="mailto:francocanalesrivero@gmail.com?subject=Acceso%20a%20Evo">francocanalesrivero@gmail.com</a></li>
+  </ul>
+</div></footer>
+
+<script>
+(function(){
+  var d=document,h=d.documentElement;
+  var t=d.querySelector('.nav-toggle'),m=d.getElementById('nav-menu');
+  if(t&&m){t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);t.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');});
+    m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');t.setAttribute('aria-expanded','false');}});}
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(rm||!('IntersectionObserver' in window))return;
+  h.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  d.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
